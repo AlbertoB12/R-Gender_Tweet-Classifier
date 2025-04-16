@@ -36,26 +36,29 @@ install.packages("wordnet")
 install.packages("compareDF")
 install.packages("testthat")
 Once installed, these packages will be loaded by the script using the library() command.
+```
 
-Usage
+## Usage
 Clone the repository:
 
+```R
 Bash
 
 git clone [repository URL]
 cd R-Gender_Tweet-Classifier
+```
 Prepare your data: Ensure your tweet data is in a CSV file named gender_classifier.csv (or modify the script accordingly). The expected data format is described in the Data Format section. Place this file in the /content directory (or adjust the setwd() command in the script).
 
 Run the R script: Open R or RStudio, navigate to the repository directory, and execute the script:
 
-R
-
+```R
 source("your_script_name.R") # Replace "your_script_name.R" with the actual name of your R script
+```
 Alternatively, you can run the script line by line in an R interactive session.
 
 View the results: The script will output classification results, statistical evaluations, word frequency analysis, topic models, and semantic network visualizations. These will be displayed in your R console or through generated plots. Community detection results for male and female networks will be saved as Communities_male.csv and Communities_female.csv in your working directory.
 
-Data Format
+## Data Format
 The script expects a CSV file named gender_classifier.csv with the following columns (at a minimum):
 
 X_unit_id: A unique identifier for each tweet.
@@ -73,7 +76,7 @@ sidebar_color: The sidebar color used by the user.
 tweet_count: The total number of tweets by the user.
 Note: The script specifically uses the text and gender columns for the Naive Bayes classification. The other columns are used for potential filtering and as document variables in the corpus.
 
-Script Description
+## Script Description
 The R script performs the following main steps:
 
 Package Installation and Loading: Installs and loads necessary R packages for text analysis, machine learning, and visualization.
@@ -92,8 +95,9 @@ Term Distance Clustering: Explores the semantic relationships between frequent w
 Topic Modeling (STM): Identifies latent topics within the entire dataset and separately for male and female tweets.
 Semantic Network Analysis (Co-occurrence Graphs): Creates and visualizes networks of co-occurring words in the entire dataset and separately for male and female tweets, allowing for the exploration of contextual differences.
 Community Detection: Identifies clusters of closely connected words within the male and female semantic networks.
-Further Analysis
+
+## Further Analysis
 The script includes sections for further linguistic analysis, such as exploring relative word frequencies, topic modeling, and semantic networks. You can modify these sections to investigate specific linguistic features or patterns of interest related to gendered language in tweets. The community detection results in the CSV files can be further analyzed to understand the different thematic clusters of words associated with each gender.
 
-Contributing
+## Contributing
 Contributions to this project are welcome. Feel free to fork the repository, make changes, 1  and submit pull requests. Please ensure that your code is well-documented and follows good coding practices.   
