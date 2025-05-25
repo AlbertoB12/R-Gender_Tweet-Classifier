@@ -1,4 +1,4 @@
-# R-Gender_Tweet-Classifier
+# Gender_Tweet-Classifier
 Naive-Bayes gender classifier of tweets
 
 This repository contains an R script for performing gender classification of tweets using a Naive Bayes classifier. The script includes steps for data loading, preprocessing, model training, evaluation, and further analysis of the language used by different genders.
